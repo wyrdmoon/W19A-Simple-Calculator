@@ -9,6 +9,20 @@ print("2. Subtract")
 print("3. Multiply")
 print("4. Divide")
 
-userChoice = input ("Enter 1 or 2 or 3 or 4 : ")
+userChoice = input ("Select Operation")
 if userChoice in ('1', '2', '3', '4' ):
+    num1 = float(input("Enter first number"))
+    num2 = float(input("Enter second number"))
     
+    
+    if(userChoice =="1"):
+        addition.add(num1, num2)
+    elif(userChoice == "2"):
+        subtraction.sub(num1, num2)
+    elif(selection == "3"):
+        multiplication.multi(num1, num2)
+    elif(userChoice == "4"):
+        division.div(num1, num2)
+        
+    else:
+        print("error")
