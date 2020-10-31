@@ -1,13 +1,13 @@
-import addition.py
-import subtraction.py
-import multiplication.py
-import division.py 
+import addition
+import subtraction
+import multiplication
+import division 
 
 print ("choose an operation")
-print("1. Add")
-print("2. Subtract")
-print("3. Multiply")
-print("4. Divide")
+print ("1. addition")
+print ("2. subtraction")
+print ("3. multiplication")
+print ("4. division")
 
 userChoice = input ("Select Operation")
 if userChoice in ('1', '2', '3', '4' ):
@@ -16,13 +16,13 @@ if userChoice in ('1', '2', '3', '4' ):
     
     
     if(userChoice =="1"):
-        addition.add(num1, num2)
+        addition.addNum(num1, num2)
     elif(userChoice == "2"):
-        subtraction.sub(num1, num2)
+        subtraction.subNum(num1, num2)
     elif(selection == "3"):
-        multiplication.multi(num1, num2)
+        multiplication.multiNum(num1, num2)
     elif(userChoice == "4"):
-        division.div(num1, num2)
+        division.divNum(num1, num2)
         
     else:
         print("error")
